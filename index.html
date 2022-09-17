@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>STG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" href="./images/bg01.jpg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          const vanta = document.querySelector("#vanta");
+          vanta.style.opacity = 0.9;
+          vanta.style.filter = "blur(0px)";
+          VANTA.WAVES({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0x0,
+          });
+        }, 500);
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 2000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="./images/stg.jpeg" />
+      </header>
+      <h1>Самогон на какой-то хуйне</h1>
+      <p>
+        Описание от Димы Чернавских:
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+        tempore nemo consequatur error voluptatum nostrum non voluptatem quos
+        qui quibusdam vel distinctio dicta cupiditate magni porro quasi, tempora
+        architecto soluta.
+      </p>
+    </main>
+  </body>
+</html>
