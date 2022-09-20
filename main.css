@@ -43,7 +43,7 @@ header > img {
   width: 8em;
   height: 8em;
   border-radius: 100%;
-  border: 1px solid #fff;
+  border: 5px solid #fffa;
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
