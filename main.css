@@ -9,11 +9,6 @@ html {
   color: #fff;
 }
 
-body {
-  background: url(./images/bg01.jpeg) no-repeat center center fixed;
-  background-size: cover;
-}
-
 #vanta {
   z-index: 0;
   position: fixed;
@@ -85,7 +80,7 @@ h3 {
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
 }
 
-p {
+div.text {
   font-size: 1em;
   color: black;
   box-sizing: border-box;
