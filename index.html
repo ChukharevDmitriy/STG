@@ -25,19 +25,22 @@
             scaleMobile: 1.0,
             color: 0x0,
           });
-        }, 2000);
+        }, 1000);
 
         setTimeout(() => {
           const main = document.querySelector("main");
           main.style.opacity = 1;
           main.style.filter = "blur(0px)";
-        }, 2000);
+        }, 1000);
       });
     </script>
     <style>
       body {
-        background: url(./images/bg01.jpeg) no-repeat center center fixed;
-        background-size: cover;
+        background-color: black;
+      }
+      a {
+        color: white;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -45,57 +48,15 @@
     <div id="vanta"></div>
     <main class="animated">
       <header>
-        <img src="./images/logo.png" />
-        <h1>STG</h1>
+        <img src="./images/manFace.jpeg" />
+        <h1><a href="./index.html"> STG </a></h1>
       </header>
-      <h3>Мужская линейка</h3>
-      <ul>
-        <li>
-          <a href="./page1.html"> Настойка «Лист-Твист» 40% </a>
-        </li>
-        <li>
-          <a href=""> Самогон (ректификат) </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Вишня" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Облепиховая" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Макадамия" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Перцовка" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Хреновуха" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "На кедровых орешках" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Бородинская" </a>
-        </li>
-        <li>
-          <a href=""> Настойка "На дубовой щипе" </a>
-        </li>
-        <li>
-          <a href=""> Коньяк </a>
-        </li>
-        <li>
-          <a href=""> Настойка "Клюква" </a>
-        </li>
-        <li>
-          <a href=""> Рисовая водка </a>
-        </li>
-      </ul>
-      <h3>Женская линейка</h3>
-      <ul>
-        <li>
-          <a href=> Настойка "Вишня" </a>
-        </li>
-      </ul>
+      <div class="text" id="man">
+        <h3><a href="./mans_line.html"> Мужская линейка 40% </a></h3>
+      </div>
+      <div class="text" id="woman">
+        <h3><a href="./womans_line.html"> Женская линейка 18% </a></h3>
+      </div>
     </main>
   </body>
 </html>
